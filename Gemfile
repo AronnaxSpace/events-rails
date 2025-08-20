@@ -63,6 +63,8 @@ group :development do
   gem "letter_opener_web", "~> 2.0"
   gem 'rubocop', require: false
   gem 'rubocop-rails', require: false
+  gem "ed25519", "~> 1.2"
+  gem "bcrypt_pbkdf", "~> 1.1"
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
