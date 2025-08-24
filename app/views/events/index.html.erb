@@ -1,3 +1,43 @@
+<div class="flex gap items-center flex-wrap mt-4" data-controller="switch-mode">
+  <label for="modal-toggle" class="btn">
+    <i class="fas fa-info-circle"></i> Open Modal
+  </label>
+  <label for="sidebar-toggle" class="btn">
+    <i class="fas fa-bars"></i> Open Sidebar
+  </label>
+  <button id="mode-toggle" class="btn" data-action="click->switch-mode#switch">
+    <i class="fas fa-moon"></i> <span id="mode-toggle-text">Dark Mode</span>
+  </button>
+</div>
+
+<!-- Modal -->
+<input type="checkbox" id="modal-toggle" class="modal-toggle">
+
+<div class="modal">
+  <label for="modal-toggle" class="modal-overlay"></label>
+  <div class="modal-content">
+    <h3>Pure CSS Modal</h3>
+    <p>This modal opens and closes without any JavaScript.</p>
+    <label for="modal-toggle" class="btn">Close</label>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+
+<div class="sidebar">
+  <h3>Sidebar Menu</h3>
+  <ul>
+    <li><a href="#">Dashboard</a></li>
+    <li><a href="#">Profile</a></li>
+    <li><a href="#">Settings</a></li>
+  </ul>
+
+  <label for="sidebar-toggle" class="sidebar-close">Close</label>
+</div>
+
+<label for="sidebar-toggle" class="sidebar-overlay"></label>
+
 <% if @events.any? %>
   <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
     <%= render @events %>

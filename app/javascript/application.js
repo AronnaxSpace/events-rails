@@ -2,7 +2,6 @@
 import "@hotwired/turbo-rails"
 import "./controllers"
 import "trix"
-import "aronnax-styles/dist/aronnax-styles.min.js";
 
 window.addEventListener("trix-file-accept", function(event) {
   event.preventDefault()

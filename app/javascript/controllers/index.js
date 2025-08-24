@@ -12,3 +12,6 @@ application.register("drawer", DrawerController)
 
 import EventTimeFormatController from "./event_time_format_controller"
 application.register("event-time-format", EventTimeFormatController)
+
+import SwitchModeController from "./switch_mode_controller"
+application.register("switch-mode", SwitchModeController)
