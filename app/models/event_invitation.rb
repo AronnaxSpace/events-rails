@@ -50,7 +50,8 @@ class EventInvitation < ApplicationRecord
   end
 
   def send_invitation_email
-    EventMailer.with(event_invitation: self).new_event.deliver_later
+    # disabe sending emails temporarily
+    # EventMailer.with(event_invitation: self).new_event.deliver_later
   end
 
   def event_published?
