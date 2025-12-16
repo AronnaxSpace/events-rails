@@ -1,6 +1,6 @@
 server '89.38.135.187', user: 'deploy', roles: %w[app db web]
 
-set :deploy_to, '/home/deploy/projects/events'
+set :deploy_to, '/home/deploy/apps/events'
 set :branch, 'main'
 
 # server-based syntax
