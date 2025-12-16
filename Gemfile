@@ -50,11 +50,11 @@ gem "image_processing", "~> 1.2"
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]
-  gem "pry-rails", "~> 0.3.9"
-  gem "rspec-rails", "~> 6.0"
-  gem "faker", "~> 3.2"
-  gem "factory_bot_rails", "~> 6.2"
-  gem "shoulda-matchers", "~> 5.3"
+  gem "pry-rails"
+  gem "rspec-rails"
+  gem "faker"
+  gem "factory_bot_rails"
+  gem "shoulda-matchers"
 end
 
 group :development do
