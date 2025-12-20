@@ -39,3 +39,8 @@ set :keep_releases, 1
 # set :ssh_options, verify_host_key: :secure
 
 set :passenger_restart_with_touch, true
+
+# Sidekiq configuration
+set :init_system, :systemd
+set :sidekiq_service_unit_name, "sidekiq-events"
+set :sidekiq_role, :app

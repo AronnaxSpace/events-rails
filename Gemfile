@@ -65,6 +65,11 @@ group :development do
   gem 'rubocop-rails', require: false
   gem "ed25519", "~> 1.2"
   gem "bcrypt_pbkdf", "~> 1.1"
+  gem "capistrano", "~> 3.18"
+  gem "capistrano-rails", "~> 1.6"
+  gem "capistrano-passenger", "~> 0.2.1"
+  gem "capistrano-rbenv", "~> 2.2"
+  gem "capistrano-sidekiq", "~> 3.0"
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
@@ -83,10 +88,6 @@ end
 gem "devise", "~> 4.9"
 gem "aasm", "~> 5.5"
 gem "pundit", "~> 2.3"
-gem "capistrano", "~> 3.18"
-gem "capistrano-rails", "~> 1.6"
-gem "capistrano-passenger", "~> 0.2.1"
-gem "capistrano-rbenv", "~> 2.2"
 gem "after_commit_everywhere", "~> 1.3"
 gem "sidekiq", "~> 6.5", ">= 6.5.12"
 gem "sidekiq-scheduler", "~> 4.0", ">= 4.0.3"
